@@ -13,7 +13,7 @@ namespace Yabfasp.Core
     /// The definition of a valid <see cref="YetAnotherBlog"/> used when building an
     /// instance using the fluid factory.
     /// </summary>
-    public class ConfigurationValidator : AbstractValidator<YetAnotherBlog>
+    internal class ConfigurationValidator : AbstractValidator<YetAnotherBlog>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ConfigurationValidator"/> class.

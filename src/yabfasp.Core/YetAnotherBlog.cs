@@ -13,7 +13,7 @@ namespace Yabfasp.Core
     /// <summary>
     /// The Yet Another Blog API.
     /// </summary>
-    public class YetAnotherBlog : IAmYetAnotherBlog, IBlogBuilder
+    internal class YetAnotherBlog : IAmYetAnotherBlog, IBlogBuilder
     {
         private readonly IValidator<YetAnotherBlog> validator;
 
