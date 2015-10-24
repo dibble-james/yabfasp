@@ -7,7 +7,7 @@
     <ProjectGuid>{119CE8EA-48F8-4825-A366-0DBAFE98F605}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>yabfasp.Core</RootNamespace>
+    <RootNamespace>Yabfasp.Core</RootNamespace>
     <AssemblyName>yabfasp.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -54,7 +54,10 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBlogBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IAmYetAnotherBlog.cs" />
+    <Compile Include="YetAnotherBlog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\stylecop.json">
