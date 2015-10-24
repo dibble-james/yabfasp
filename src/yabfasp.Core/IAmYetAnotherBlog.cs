@@ -11,7 +11,7 @@ namespace Yabfasp.Core
     /// <summary>
     /// Implementing classes define methods for interacting with a Yet Another Blog instance.
     /// </summary>
-    public interface IAmYetAnotherBlog
+    public interface IAmYetAnotherBlog : IDisposable
     {
     }
 }
