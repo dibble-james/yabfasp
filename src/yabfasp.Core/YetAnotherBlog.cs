@@ -9,6 +9,7 @@ namespace Yabfasp.Core
     using System;
     using Dibble.Framework.Data;
     using FluentValidation;
+    using FluentValidation.Results;
 
     /// <summary>
     /// The Yet Another Blog API.
@@ -50,7 +51,12 @@ namespace Yabfasp.Core
         /// <exception cref="ValidationException">Thrown if the configuration of this builder is invalid.</exception>
         public IAmYetAnotherBlog Finalize()
         {
-            this.validator.ValidateAndThrow(this);
+            var validationResult = this.validator.Validate(this);
+
+            if (!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }
 
             return this;
         }
@@ -90,6 +96,7 @@ namespace Yabfasp.Core
             {
                 if (disposing)
                 {
+                    this.Persistence.Dispose();
                 }
 
                 this.isDisposed = true;
