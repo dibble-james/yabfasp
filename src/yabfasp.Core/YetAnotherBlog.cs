@@ -9,7 +9,6 @@ namespace Yabfasp.Core
     using System;
     using Dibble.Framework.Data;
     using FluentValidation;
-    using FluentValidation.Results;
 
     /// <summary>
     /// The Yet Another Blog API.
