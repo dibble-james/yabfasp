@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="ConfigurationValidator.cs" />
     <Compile Include="IBlogBuilder.cs" />
+    <Compile Include="IBlogManager.cs" />
     <Compile Include="Model\Blog.cs" />
     <Compile Include="Model\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
