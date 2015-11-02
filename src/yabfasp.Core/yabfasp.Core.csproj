@@ -57,6 +57,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogManager.cs" />
     <Compile Include="ConfigurationValidator.cs" />
     <Compile Include="IBlogBuilder.cs" />
     <Compile Include="IBlogManager.cs" />
