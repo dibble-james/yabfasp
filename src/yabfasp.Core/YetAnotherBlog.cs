@@ -33,6 +33,9 @@ namespace Yabfasp.Core
             this.isDisposed = false;
         }
 
+        /// <inheritdoc/>
+        public IBlogManager Blogs { get; private set; }
+
         /// <summary>
         /// Gets the persistence.
         /// </summary>
@@ -41,13 +44,7 @@ namespace Yabfasp.Core
         /// </value>
         internal IUnitOfWork Persistence { get; private set; }
 
-        /// <summary>
-        /// Returns the <see cref="IAmYetAnotherBlog" /> instance that has been built.
-        /// </summary>
-        /// <returns>
-        /// The <see cref="IAmYetAnotherBlog" /> instance that has been built.
-        /// </returns>
-        /// <exception cref="ValidationException">Thrown if the configuration of this builder is invalid.</exception>
+        /// <inheritdoc/>
         public IAmYetAnotherBlog Finalize()
         {
             var validationResult = this.validator.Validate(this);
@@ -60,17 +57,18 @@ namespace Yabfasp.Core
             return this;
         }
 
-        /// <summary>
-        /// Adds a <see cref="IUnitOfWork" /> to the <see cref="IAmYetAnotherBlog" /> blog instance.
-        /// </summary>
-        /// <param name="persistence">The persistence store to use.</param>
-        /// <returns>
-        /// The fluid builder instance.
-        /// </returns>
-        /// <exception cref="NotImplementedException"></exception>
+        /// <inheritdoc/>
         public IBlogBuilder PersistedWith(IUnitOfWork persistence)
         {
             this.Persistence = persistence;
+
+            return this;
+        }
+
+        /// <inheritdoc/>
+        public IBlogBuilder WithDefaultBlogManager()
+        {
+            this.Blogs = new BlogManager(this.Persistence);
 
             return this;
         }

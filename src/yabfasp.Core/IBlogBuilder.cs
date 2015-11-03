@@ -21,6 +21,12 @@ namespace Yabfasp.Core
         IBlogBuilder PersistedWith(IUnitOfWork persistence);
 
         /// <summary>
+        /// Sets this instances <see cref="IBlogManager"/> as the default <see cref="BlogManager"/>.
+        /// </summary>
+        /// <returns>The fluid builder instance.</returns>
+        IBlogBuilder WithDefaultBlogManager();
+
+        /// <summary>
         /// Returns the <see cref="IAmYetAnotherBlog"/> instance that has been built.
         /// </summary>
         /// <returns>The <see cref="IAmYetAnotherBlog"/> instance that has been built.</returns>
