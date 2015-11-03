@@ -10,9 +10,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("yabfasp.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The core engine of YABFASP")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("James Dibble")]
 [assembly: AssemblyProduct("yabfasp.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
