@@ -80,6 +80,7 @@
       <Link>yabfasp.snk</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="yabfasp.Core.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0-beta014\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
