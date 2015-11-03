@@ -61,6 +61,15 @@ namespace Yabfasp.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A BlogManager has not been set for this Yet Another Blog.
+        /// </summary>
+        internal static string ValidationErrorNoBlogManager {
+            get {
+                return ResourceManager.GetString("ValidationErrorNoBlogManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WithPersistence(IUnitOfWork) was not called when building this Yet Another Blog.
         /// </summary>
         internal static string ValidationErrorNoPersistence {

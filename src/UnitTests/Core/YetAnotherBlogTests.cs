@@ -57,5 +57,18 @@ namespace UnitTests.Core
 
             Assert.AreEqual(target, actual);
         }
+
+        [TestMethod]
+        public void WithDefaultBlogManager()
+        {
+            var fakeValidation = new Mock<IValidator<YetAnotherBlog>>();
+
+            var target = new YetAnotherBlog(fakeValidation.Object);
+
+            target.WithDefaultBlogManager();
+
+            Assert.IsNotNull(target.Blogs);
+            Assert.IsInstanceOfType(target.Blogs, typeof(BlogManager));
+        }
     }
 }

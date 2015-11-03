@@ -13,5 +13,12 @@ namespace Yabfasp.Core
     /// </summary>
     public interface IAmYetAnotherBlog : IDisposable
     {
+        /// <summary>
+        /// Gets access to the <see cref="IBlogManager"/>.
+        /// </summary>
+        /// <value>
+        /// The <see cref="IBlogManager"/>.
+        /// </value>
+        IBlogManager Blogs { get; }
     }
 }

@@ -21,6 +21,8 @@ namespace Yabfasp.Core
         public ConfigurationValidator()
         {
             this.RuleFor(yab => yab.Persistence).NotNull().WithLocalizedMessage(() => Resources.ValidationErrorNoPersistence);
+
+            this.RuleFor(yab => yab.Blogs).NotNull().WithLocalizedMessage(() => Resources.ValidationErrorNoBlogManager);
         }
     }
 }
