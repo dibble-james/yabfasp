@@ -61,6 +61,24 @@ namespace Yabfasp.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Could not find the post to publish.
+        /// </summary>
+        internal static string CouldNotFindPostToPublishException {
+            get {
+                return ResourceManager.GetString("CouldNotFindPostToPublishException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An attempt was made to update a post that was null.
+        /// </summary>
+        internal static string PostToUpdateNullException {
+            get {
+                return ResourceManager.GetString("PostToUpdateNullException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A BlogManager has not been set for this Yet Another Blog.
         /// </summary>
         internal static string ValidationErrorNoBlogManager {

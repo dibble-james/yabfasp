@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Yabfasp.Core
+namespace Yabfasp.Core.Validation
 {
     using FluentValidation;
     using Properties;

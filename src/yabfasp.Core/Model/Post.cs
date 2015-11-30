@@ -36,5 +36,10 @@ namespace Yabfasp.Core.Model
         /// Gets or sets the date this <see cref="Post"/> was published.
         /// </summary>
         public DateTime Published { get; set; }
+
+        /// <summary>
+        /// Gets or sets the content.
+        /// </summary>
+        public string Content { get; set; }
     }
 }

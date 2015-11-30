@@ -36,8 +36,8 @@
     <AssemblyOriginatorKeyFile>..\yabfasp.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dibble.Framework.Data.Core, Version=1.0.18.0, Culture=neutral, PublicKeyToken=53ad0d4232239b47, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dibble.Framework.Data.Core.1.0.18.0\lib\net45\Dibble.Framework.Data.Core.dll</HintPath>
+    <Reference Include="Dibble.Framework.Data.Core, Version=1.0.22.0, Culture=neutral, PublicKeyToken=53ad0d4232239b47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dibble.Framework.Data.Core.1.0.22.0\lib\net45\Dibble.Framework.Data.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FluentValidation, Version=5.6.2.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL">
@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\BlogManagerTests.cs" />
+    <Compile Include="Core\PostManagerTests.cs" />
     <Compile Include="Core\YetAnotherBlogTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
