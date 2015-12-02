@@ -95,5 +95,23 @@ namespace Yabfasp.Core.Properties {
                 return ResourceManager.GetString("ValidationErrorNoPersistence", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A PostManager has not been set for this Yet Another Blog.
+        /// </summary>
+        internal static string ValidationErrorNoPostManager {
+            get {
+                return ResourceManager.GetString("ValidationErrorNoPostManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No content has been provided for this Post.
+        /// </summary>
+        internal static string ValidationErrorPostNoContent {
+            get {
+                return ResourceManager.GetString("ValidationErrorPostNoContent", resourceCulture);
+            }
+        }
     }
 }

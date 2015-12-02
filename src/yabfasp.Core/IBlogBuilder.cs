@@ -27,6 +27,12 @@ namespace Yabfasp.Core
         IBlogBuilder WithDefaultBlogManager();
 
         /// <summary>
+        /// Sets this instances <see cref="IPostManager"/> as the default <see cref="PostManager"/>.
+        /// </summary>
+        /// <returns>The fluid builder instance.</returns>
+        IBlogBuilder WithDefaultPostManager();
+
+        /// <summary>
         /// Returns the <see cref="IAmYetAnotherBlog"/> instance that has been built.
         /// </summary>
         /// <returns>The <see cref="IAmYetAnotherBlog"/> instance that has been built.</returns>

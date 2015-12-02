@@ -20,5 +20,13 @@ namespace Yabfasp.Core
         /// The <see cref="IBlogManager"/>.
         /// </value>
         IBlogManager Blogs { get; }
+
+        /// <summary>
+        /// Gets access to the <see cref="IPostManager"/>.
+        /// </summary>
+        /// <value>
+        /// The <see cref="IPostManager"/>
+        /// </value>
+        IPostManager Posts { get; }
     }
 }

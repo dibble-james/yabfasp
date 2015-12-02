@@ -129,4 +129,10 @@
   <data name="ValidationErrorNoPersistence" xml:space="preserve">
     <value>WithPersistence(IUnitOfWork) was not called when building this Yet Another Blog</value>
   </data>
+  <data name="ValidationErrorNoPostManager" xml:space="preserve">
+    <value>A PostManager has not been set for this Yet Another Blog</value>
+  </data>
+  <data name="ValidationErrorPostNoContent" xml:space="preserve">
+    <value>No content has been provided for this Post</value>
+  </data>
 </root>

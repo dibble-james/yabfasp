@@ -23,6 +23,8 @@ namespace Yabfasp.Core.Validation
             this.RuleFor(yab => yab.Persistence).NotNull().WithLocalizedMessage(() => Resources.ValidationErrorNoPersistence);
 
             this.RuleFor(yab => yab.Blogs).NotNull().WithLocalizedMessage(() => Resources.ValidationErrorNoBlogManager);
+
+            this.RuleFor(yab => yab.Posts).NotNull().WithLocalizedMessage(() => Resources.ValidationErrorNoPostManager);
         }
     }
 }

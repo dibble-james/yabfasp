@@ -70,5 +70,18 @@ namespace UnitTests.Core
             Assert.IsNotNull(target.Blogs);
             Assert.IsInstanceOfType(target.Blogs, typeof(BlogManager));
         }
+
+        [TestMethod]
+        public void WithDefaultPosrManager()
+        {
+            var fakeValidation = new Mock<IValidator<YetAnotherBlog>>();
+
+            var target = new YetAnotherBlog(fakeValidation.Object);
+
+            target.WithDefaultPostManager();
+
+            Assert.IsNotNull(target.Posts);
+            Assert.IsInstanceOfType(target.Posts, typeof(PostManager));
+        }
     }
 }

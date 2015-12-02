@@ -36,6 +36,9 @@ namespace Yabfasp.Core
         /// <inheritdoc/>
         public IBlogManager Blogs { get; private set; }
 
+        /// <inheritdoc/>
+        public IPostManager Posts { get; private set; }
+
         /// <summary>
         /// Gets the persistence.
         /// </summary>
@@ -79,6 +82,14 @@ namespace Yabfasp.Core
         public void Dispose()
         {
             this.Dispose(true);
+        }
+
+        /// <inheritdoc/>
+        public IBlogBuilder WithDefaultPostManager()
+        {
+            this.Posts = new PostManager(this.Persistence);
+
+            return this;
         }
 
         /// <summary>
